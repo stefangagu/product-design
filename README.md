@@ -70,10 +70,25 @@ Every skill follows the same contract, documented in `shared/`:
   insight → implication → recommendation, a common severity scale across all three audit
   skills, option sets, and the confidence block.
 
+## Repo layout
+
+```
+skills/     the 12 skills, one directory each, containing a SKILL.md
+shared/     conventions every skill follows
+.claude/    a symlink pointing at skills/, so Claude Code loads them automatically
+```
+
+The skills live in the plain `skills/` directory so they're easy to browse and share.
+`.claude/skills` is a symlink to it — that's the path Claude Code reads from, so cloning
+this repo and opening it gives you all 12 working immediately, with nothing to copy.
+
 ## Using these skills
 
-Copy `.claude/skills/` into any project, or open this repo directly in Claude Code. Skills
-are invoked by name (`/research`) or picked up automatically when a task matches.
+Open this repo in Claude Code and the skills are live — invoke one by name (`/research`)
+or let it be picked up automatically when a task matches.
+
+To use them in another project, copy the `skills/` directory to `.claude/skills/` there,
+or copy individual skill folders — each `SKILL.md` is self-contained.
 
 Two skills need live codebase access — `/design-proto` and `/design-consistency` — and
 `/drift-check` needs it for Track A comparisons. Everything else works standalone.
