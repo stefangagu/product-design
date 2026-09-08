@@ -117,8 +117,23 @@ by the second sprint.
 Severity is shared with the other audit skills: **Blocker**, **Major**, **Minor**,
 **Polish**.
 
+## Delivery
+
+Before finalizing, ask where the output should go — a short menu, not a blocking gate:
+
+- **Markdown file** at a path they name — recommend `audits/drift-<feature>.md`
+- **Claude artifact** — a shareable, published page
+- **Comments on the PR** that introduced the drift
+- **Issues filed in the tracker** for the regressions only
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
+
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Treating every difference as a defect.** Classify each one. Improvements exist.
 - **Pixel-comparing a Track B prototype.** It never claimed to specify styling. Reporting
   grayscale-vs-brand-color as drift makes the whole report noise.

@@ -114,10 +114,19 @@ persona will mislead if wrong.
 
 ## Step 4 — Deliver
 
-Ask the destination — markdown file at a path they name (recommend one), Claude artifact,
-Confluence/Drive/Notion if a connector is attached, or terminal only. Then tell them the
-persona can be loaded by `/impersonate` to get in-character feedback on concepts, flows,
-and screens.
+Ask where the persona document should go:
+
+- **Markdown file** at a path they name — recommend `personas/persona-<name>.md`
+- **Claude artifact** — a shareable, published page
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
+
+Then tell them the persona can be loaded by `/impersonate` to get in-character feedback on
+concepts, flows, and screens — and remind them where it lives, since that's the path
+`/impersonate` will need.
 
 ## Revising an existing persona
 
@@ -128,6 +137,7 @@ a finding.
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Demographic theatre.** Age, a stock-photo vibe, and a favourite coffee order tell you
   nothing about a design decision. Behaviour, motivation, and constraints do.
 - **The persona who wants your product.** If the persona's goals map one-to-one onto your

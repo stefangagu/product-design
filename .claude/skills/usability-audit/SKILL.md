@@ -114,8 +114,22 @@ Severity scale (shared with `/design-consistency` and `/drift-check`):
 - **Minor** — noticeable roughness, no measurable task impact
 - **Polish** — cosmetic or consistency nit
 
+## Delivery
+
+Before finalizing, ask where the output should go — a short menu, not a blocking gate:
+
+- **Markdown file** at a path they name — recommend `audits/usability-<feature>.md`
+- **Claude artifact** — a shareable, published page
+- **Issues filed in the tracker** — one per finding, severity mapped to your labels
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
+
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Issues without fixes.** Every issue gets a concrete suggested fix. No exceptions.
 - **Heuristic name-dropping.** "Violates consistency and standards" says nothing. Name the
   two places that disagree.

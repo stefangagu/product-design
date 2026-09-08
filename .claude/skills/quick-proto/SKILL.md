@@ -92,10 +92,19 @@ at once, with clickable navigation between them.
 - **Interactive where it matters** — clicking the primary action moves to the next screen.
   Everything else can be inert.
 
-Publish as an artifact so it can be shared and clicked through, unless the user wants a
-local file.
+## Step 4 — Deliver
 
-## Step 4 — Hand over
+Ask where it should go before finalizing:
+
+- **Claude artifact** — recommended for this skill: it's clickable, shareable, and the
+  whole point of a flow prototype is that other people walk through it
+- **Local HTML file** at a path they name
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only** — the flow map and screen descriptions, without the built file
+
+If the user opts out of choosing, publish the artifact and give them the link.
+
+## Step 5 — Hand over
 
 Say what's shown, what's deliberately omitted, and what question the prototype is meant to
 answer. Then offer the next step:
@@ -107,6 +116,7 @@ answer. Then offer the next step:
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Drifting into design.** The moment shadows and brand color appear, reviewers start
   reviewing the wrong thing.
 - **Happy path only.** Empty, error, and edge states are usually where the flow is wrong.

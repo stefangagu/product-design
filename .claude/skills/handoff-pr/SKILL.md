@@ -94,10 +94,22 @@ each with its rationale — this is the part that would have been a spec>
 <exact commands and route>
 ```
 
-## Step 4 — Open the PR
+## Step 4 — Deliver
 
-Offer to open the PR with this as the description. Ask before pushing or opening anything
-— publishing to a shared repo is an outward-facing action.
+Ask where the handoff package should go:
+
+- **A PR description** — recommended, since the package is written for reviewers and this
+  puts it where the review happens
+- **Markdown file** at a path they name — recommend `docs/handoff/<feature>.md`
+- **Claude artifact** — a shareable page for stakeholders outside the repo
+- **Confluence / Google Drive / Notion / a ticket** — only if such a connector is attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say where you put it — do **not** silently open a PR as the fallback.
+
+If they choose the PR: ask before pushing or opening anything. Publishing to a shared repo
+is an outward-facing action, and approval to write the document is not approval to push it.
 
 Recommend labelling the PR clearly as a prototype (a `prototype` label, or a `[Prototype]`
 title prefix) so it can't be merged by reflex.
@@ -110,6 +122,7 @@ handoff.
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **A generic disclaimer instead of a specific list.** "May need refinement" tells a
   reviewer nothing. Name the stubs.
 - **Summarizing without reading the diff.** The value here is precision.

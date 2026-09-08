@@ -72,11 +72,25 @@ For a **flow or prototype**, walk it step by step:
 For a **concept** (no screens yet), react to the pitch: would this persona care, would
 they understand it, what would they compare it to, what would stop them adopting it.
 
-## Step 3 — Persist the session
+## Step 3 — Deliver and persist
 
-Offer to write the session out as a document, and to fold anything learned back into the
-persona (via `/persona` in revise mode) — for instance, a reaction that revealed a
-missing trait the persona should define.
+Sessions are worth keeping — a persona's reaction is evidence, and it compounds across
+rounds of a design.
+
+Ask where the session write-up should go:
+
+- **Markdown file** at a path they name — recommend `research/impersonate-<persona>-<flow>.md`
+- **Claude artifact** — a shareable, published page
+- **Appended to the persona document**, as a dated reaction log
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only** — the right answer for a quick in-the-moment gut check
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say where you put it.
+
+Then offer to fold anything learned back into the persona (via `/persona` in revise
+mode) — for instance, a reaction that revealed a missing trait the persona should define,
+or an assumed trait the session showed to be load-bearing enough to go and validate.
 
 ## Multi-persona passes
 
@@ -86,6 +100,7 @@ into a composite — the disagreement between them is the whole value.
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **The agreeable persona.** A persona that likes everything is broken. Personas have
   goals; goals get frustrated.
 - **Generic usability feedback in a wig.** If the reaction would be identical for any

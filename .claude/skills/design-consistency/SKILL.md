@@ -122,8 +122,22 @@ Severity is shared with `/usability-audit` and `/drift-check`: **Blocker** (brea
 task or accessibility), **Major** (significant friction or clear inconsistency users
 notice), **Minor** (noticeable roughness), **Polish** (cosmetic nit).
 
+## Delivery
+
+Before finalizing, ask where the output should go — a short menu, not a blocking gate:
+
+- **Markdown file** at a path they name — recommend `audits/consistency-<scope>.md`
+- **Claude artifact** — a shareable, published page
+- **Issues filed in the tracker** — group by systemic finding, not one per symptom
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
+
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Listing symptoms without the systemic cause.** Twelve hand-rolled modals is one
   finding about the modal component, not twelve findings.
 - **Reporting duplicates as separate issues.** Group by pattern.

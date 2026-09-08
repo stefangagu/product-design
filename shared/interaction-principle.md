@@ -47,17 +47,26 @@ transcript ID, a dashboard, a line of code. No fabricated citations, no vague
 attributions ("studies show", "industry research suggests"). If a claim cannot be backed
 by a real source, mark it `[Unverified]` and present it as a hypothesis, never as fact.
 
-## Delivery-destination rule (applies to /research and /persona)
+## Delivery-destination rule (applies to every skill)
 
-Before finalizing, ask where the output should go. Offer at minimum:
+**No skill assumes where its output goes.** Before finalizing, ask the user where they
+want it delivered. Offer at minimum:
 
-- A markdown file at a path the user names (recommend a sensible default path)
-- A Claude artifact
+- A markdown file at a path the user names (always recommend a sensible default path)
+- A Claude artifact — a shareable, published page
 - Confluence / Google Drive / Notion — only if such a connector is actually attached
 - Just print it in the terminal
 
-If the user opts out of choosing, write a markdown file next to the project and say where
-you put it.
+Plus whatever is skill-appropriate: a PR description for `/handoff-pr`, issues in a tracker
+for the audit skills, a ticket for `/spec-redline`.
+
+Ask once, near the end, as a short menu — not as a blocking gate mid-work. If the user
+opts out of choosing, write a markdown file at the recommended default and say plainly
+where you put it.
+
+**For skills whose primary output is code** (`/design-proto`) or a branch (`/handoff-pr`),
+the rule applies to the accompanying document — the summary, the handoff package, the
+decision record — not to the code itself, which lives where it lives.
 
 > A shared Product Knowledge Repo — a persistent store all these skills read from and
 > write to — is the intended long-term home for these outputs. It is deliberately not

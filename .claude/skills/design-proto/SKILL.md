@@ -98,11 +98,24 @@ with one-off, un-vetted components.
 Show progress in the running app rather than describing it. Run the dev server and put
 the screen in front of the user.
 
-## Step 5 — Wrap up
+## Step 5 — Wrap up and deliver
 
 State clearly what was built, which existing components it used, anything new that was
-added with permission, and what's stubbed or faked. Then offer `/handoff-pr` to package it
-for engineering review.
+added with permission, and what's stubbed or faked.
+
+The prototype code itself lives in the repo on its branch — that isn't negotiable, it's
+what makes this Track A. But the **write-up** has a destination, so ask:
+
+- **Markdown file** in the repo — recommend `docs/prototypes/<feature>.md`, next to the code
+- **Claude artifact** — a shareable page for stakeholders who won't run the branch
+- **Straight into a PR description** via `/handoff-pr`
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say where you put it.
+
+Then offer `/handoff-pr` to package the branch for engineering review.
 
 ## Guardrail — prototype is not production
 
@@ -114,6 +127,7 @@ is that the *design* needs no translation — the engineering still does.
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Skipping the inspection step.** A prototype built on invented components is a
   low-fidelity prototype with high-fidelity costs.
 - **Quiet component creation.** The single most damaging failure of this skill.

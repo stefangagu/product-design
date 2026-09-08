@@ -71,6 +71,19 @@ Frame as diffs against the current persona document, not a rewrite.>
 Theme names must be findings. "Onboarding" is a topic. "Users abandon onboarding at the
 permissions screen because the value exchange hasn't been established yet" is a theme.
 
+## Delivery
+
+Before finalizing, ask where the output should go — a short menu, not a blocking gate:
+
+- **Markdown file** at a path they name — recommend `research/synthesis-<corpus>.md`
+- **Claude artifact** — a shareable, published page
+- **Split per theme** into separate documents, if the themes will be worked on independently
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
+
 ## Handoff
 
 - Persona updates feed `/persona` — offer to run it to apply them.
@@ -79,6 +92,7 @@ permissions screen because the value exchange hasn't been established yet" is a 
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Quote mining.** Picking quotes that fit a conclusion reached before reading.
 - **Theme inflation.** Twelve themes from eight interviews means nothing was synthesized.
   Aim for three to six.

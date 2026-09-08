@@ -93,14 +93,21 @@ Never a loose report. Always this shape:
 - Assumed: <what was guessed, and what would confirm it>
 ```
 
-## Step 4 — Ask where it goes
+## Step 4 — Deliver
 
-Before finalizing, ask the delivery destination — markdown file at a path they name,
-Claude artifact, Confluence/Drive/Notion if a connector is attached, or terminal only. If
-they opt out, write a markdown file and say where you put it.
+Before finalizing, ask where the output should go:
+
+- **Markdown file** at a path they name — recommend `research/<question>.md`
+- **Claude artifact** — a shareable, published page
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Insight inflation.** "Users want it to be easy" is not a finding. If it would be true
   of any product, cut it.
 - **Recommendations that aren't actions.** "Consider improving discoverability" is a

@@ -125,8 +125,16 @@ silent guessing and unnecessary blocking>
 
 ## Step 4 — Deliver
 
-Ask where it goes — markdown file, artifact, Confluence/Drive/Notion if a connector is
-attached, or terminal.
+Ask where the spec should go:
+
+- **Markdown file** at a path they name — recommend `docs/specs/<feature>.md`
+- **A ticket** in the tracker — often right, since this is what engineering builds from
+- **Claude artifact** — a shareable, published page
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
 
 Then note the honest trade-off: this spec exists because the prototype was low-fi. If the
 team has codebase access, `/design-proto` would have skipped most of this document
@@ -134,6 +142,7 @@ entirely. That's the Track A argument, made concrete by the length of what you j
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Happy path only.** The states table is the highest-value part of the spec.
 - **Approximate copy.** "Something like 'no items yet'" becomes three different strings in
   production.

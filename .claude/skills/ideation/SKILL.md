@@ -103,6 +103,19 @@ Copy must be short, real-sounding, and free of AI filler. No "seamlessly," no
 "effortlessly," no "unlock the power of." If a real product wouldn't ship that sentence,
 it isn't a variant.
 
+## Delivery
+
+Before finalizing, ask where the output should go — a short menu, not a blocking gate:
+
+- **Markdown file** at a path they name — recommend `ideation/<problem>-directions.md`
+- **Claude artifact** — a shareable, published page
+- **One document per direction**, if they're going to be pitched or explored separately
+- **Confluence / Google Drive / Notion** — only if such a connector is actually attached
+- **Terminal only**
+
+If the user opts out of choosing, write the markdown file at the recommended default and
+say plainly where you put it.
+
 ## Handoff
 
 - Chosen direction → `/quick-proto` to make it clickable, or `/design-proto` to build it
@@ -112,6 +125,7 @@ it isn't a variant.
 
 ## Failure modes to avoid
 
+- **Assuming a destination.** Never decide on the user's behalf where output lands. Ask.
 - **Five flavours of one idea.** Check the axes. If all options answer the same question,
   regenerate.
 - **The rationale that restates the idea.** "Rationale: this makes saved items easier to

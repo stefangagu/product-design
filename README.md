@@ -61,9 +61,11 @@ Every skill follows the same contract, documented in `shared/`:
 
 - **[`interaction-principle.md`](shared/interaction-principle.md)** — ask rather than
   assume; always let the user say *"idk for now"* or *"take your best guess"*; when they
-  do, proceed but state confidence explicitly. `/research`, `/persona` and `/impersonate`
-  carry confidence labels in **every** output as standard. `/research` must always cite
-  real, verifiable sources. `/research` and `/persona` must ask where to deliver output.
+  do, proceed but state confidence explicitly. **Every skill asks where to deliver its
+  output** — markdown file, artifact, connector, tracker, or terminal — and never picks a
+  destination on the user's behalf. `/research`, `/persona` and `/impersonate` additionally
+  carry confidence labels in **every** output as standard, and `/research` must always cite
+  real, verifiable sources.
 - **[`output-formats.md`](shared/output-formats.md)** — shared shapes so outputs compose:
   insight → implication → recommendation, a common severity scale across all three audit
   skills, option sets, and the confidence block.
