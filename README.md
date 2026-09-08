@@ -75,20 +75,26 @@ Every skill follows the same contract, documented in `shared/`:
 ```
 skills/     the 12 skills, one directory each, containing a SKILL.md
 shared/     conventions every skill follows
-.claude/    a symlink pointing at skills/, so Claude Code loads them automatically
 ```
 
-The skills live in the plain `skills/` directory so they're easy to browse and share.
-`.claude/skills` is a symlink to it — that's the path Claude Code reads from, so cloning
-this repo and opening it gives you all 12 working immediately, with nothing to copy.
+Each `SKILL.md` is self-contained — a skill is just a markdown file with frontmatter
+(`name`, `description`) and instructions. Readable on its own, no build step, no tooling.
 
 ## Using these skills
 
-Open this repo in Claude Code and the skills are live — invoke one by name (`/research`)
-or let it be picked up automatically when a task matches.
+Copy the skill folders you want into `.claude/skills/` in whichever project you're working
+on, and Claude Code picks them up — invoke one by name (`/research`) or let it match a task
+automatically.
 
-To use them in another project, copy the `skills/` directory to `.claude/skills/` there,
-or copy individual skill folders — each `SKILL.md` is self-contained.
+```bash
+# all 12, into a project
+cp -r skills/* /path/to/your-project/.claude/skills/
+
+# or just one
+cp -r skills/design-proto /path/to/your-project/.claude/skills/
+```
+
+To make them available in every project instead of one, copy into `~/.claude/skills/`.
 
 Two skills need live codebase access — `/design-proto` and `/design-consistency` — and
 `/drift-check` needs it for Track A comparisons. Everything else works standalone.
