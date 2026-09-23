@@ -40,7 +40,7 @@ Inline form: `[Grounded]`, `[Inferred — from the codebase's existing checkout 
 part of every output** — not only when a guess was made. For those three skills, an output
 with no confidence annotation is an incomplete output.
 
-## Sourcing rule (applies to /research and /research-synthesis)
+## Sourcing rule (applies to /research and /artifact-synthesis)
 
 Every factual claim carries a real, verifiable source: a URL, a document name, a
 transcript ID, a dashboard, a line of code. No fabricated citations, no vague

@@ -20,7 +20,7 @@ Research → Ideation → Prototyping → Validation → Dev Handoff → Shipped
 | Stage | Skill | What it does | Primary user |
 | :-- | :-- | :-- | :-- |
 | **1. Research** | `/research` | Product-oriented research framed around decisions and hypotheses, with real sources | Designers / Researchers |
-| | `/research-synthesis` | Raw transcripts, surveys and tickets → structured themes and persona updates | Designers / Researchers |
+| | `/artifact-synthesis` | Raw transcripts, notes, surveys and tickets → structured themes and persona updates | Designers / Researchers |
 | | `/persona` | Guided persona intake → confirmed summary → reusable persona document | Designers / PMs |
 | **2. Ideation** | `/ideation` | Divergent concept directions from a brief, plus A/B copy and layout variants | Designers / PMs |
 | **3A. Prototyping** | `/design-proto` | High-fidelity prototyping **in the real codebase** with the real design system | Designers |
